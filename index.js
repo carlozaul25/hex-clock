@@ -17,6 +17,15 @@ function displayTime() {
 	
 	
 	setTimeout(displayTime, 300);
+
+	if (hours===16 && minutes == 12 ){
+		document.body.style.backgroundColor = 'red';
+}else {
+	console.log('its wrong')
 }
+}
+		
+			
+
 
 displayTime();
