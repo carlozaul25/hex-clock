@@ -18,14 +18,17 @@ function displayTime() {
 	
 	setTimeout(displayTime, 300);
 
-	if (hours===16 && minutes == 12 ){
-		document.body.style.backgroundColor = 'red';
-}else {
-	console.log('its wrong')
+	if(hours === 8 && minutes === 10) {
+		document.body.style.backgroundImage = "url('morning.png')";
+	} else if (hours ===12 && minutes === 30 ) {
+		document.body.style.backgroundImage = "url('afternoon.png')";
+	}else if( hours === 6 && minutes === 30) {
+		document.body.style.backgroundImage = "url('night.png')";
+	}else {
+		console.log('not working')
+	}
+
 }
-}
-		
-			
 
 
 displayTime();
